@@ -1,0 +1,14 @@
+Para poder ejecutar el programa es necesario seguir los siguientes pasos:
+1- Instalar Node.JS y NPM
+2- Ejecutar "npm install" desde la consola en la carpeta ./AIWY/
+3- Modificar ip y puerto de la máquina donde se ejecuta el servidor en ./AIWY/layers/transmission/websockets/web/test.html -> new Common.Elements.WebSocketClient("192.168.1.2","3000"); 
+4- Desde un navegador web (preferiblemente chrome) ejecutar http://IP:PUERTO/test.html -> EJEMPLO http://192.168.1.2:3000/test.html
+5- Pulsar el botón START en el navegador.
+ 
+
+La mayoría de los mensajes están deshabilitados por defecto.
+Si se quieren ver los mensajes que se envían y reciben en el navegador hacer lo siguiente:
+1- Descomentar la línea 29 del archivo ./AIWY/layers/transmission/websockets/web/test.html 
+//$('#messages').prepend($('<li>').text(str)); -> $('#messages').prepend($('<li>').text(str));
+2- Comentar la línea 28 del archivo ./AIWY/layers/transmission/websockets/web/test.html 
+if (confirm)$('#messages').prepend($('<li>').text(str)); -> //if (confirm)$('#messages').prepend($('<li>').text(str));

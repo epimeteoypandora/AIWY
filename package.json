@@ -1,0 +1,16 @@
+{
+  "name": "UbiquitousJS",
+  "description": "",
+  "version": "0.3.0",
+  "dependencies": {
+    "async": "^2.4.1",
+    "asyncawait": "^1.0.6",
+    "express": "^4.15.3",
+    "request-promise": "^4.2.1",
+    "setimmediate": "^1.0.5",
+    "socket.io": "^2.0.2"
+  },
+  "scripts": {
+    "start": "node start.js"
+  }
+}
